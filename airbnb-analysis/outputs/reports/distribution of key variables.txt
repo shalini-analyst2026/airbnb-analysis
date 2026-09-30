@@ -1,0 +1,41 @@
+Here's the analysis of each plot from your charts:
+
+---
+
+**📊 Price Distribution**
+
+| Plot | Observation |
+|---|---|
+| Price Raw | ✅ Yes — strongly **right-skewed**. Most listings are priced between $0–$200, very few are expensive |
+| Price Log Scale | Shows a more **normal bell curve** after log transform — confirms skewness in raw data |
+| Price Boxplot | Several **outliers** visible above $300, with extreme values reaching $1000+ |
+
+---
+
+**📊 Reviews Distribution**
+
+| Plot | Observation |
+|---|---|
+| Number of Reviews | ✅ Yes — **right-skewed**. Most listings have very few reviews (0–50), few have 500–900 |
+| Review Scores Rating | Ratings are **heavily clustered near 4.5–5.0** — very few low ratings, left-skewed |
+| Reviews Per Month | Most listings get **0–2 reviews/month**, highly right-skewed with few outliers at 8–12 |
+
+---
+
+**📊 Location Distribution**
+
+| Plot | Observation |
+|---|---|
+| Top Neighbourhoods | **Pine Hills** has the most listings (~105), followed by Unknown and Mansion Area |
+| Location Score | Scores are **clustered between 4.0–5.0**, guests generally rate locations very highly |
+| Availability 365 | **Bimodal pattern** — listings are either barely available (0–50 days) or fully available (300–365 days) |
+
+---
+
+**Key Takeaways:**
+- `price` needs **outlier treatment** — values above $500 are likely outliers
+- `number_of_reviews` is skewed — consider **log transform** for modelling
+- Most guests are happy with locations — scores are consistently high
+- Availability split suggests two types of hosts: occasional vs full-time hosts
+
+Want me to proceed with **outlier treatment** next?

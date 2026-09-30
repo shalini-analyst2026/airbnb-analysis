@@ -1,0 +1,6 @@
+Entire home/apt costs almost double a private room. Guests pay a big premium for full property access.
+Melrose commands the highest prices ($170 avg) despite not having the most listings
+Brickell is the cheapest at just $47 avg — nearly 4x cheaper than Melrose
+Pine Hills has the most listings but only mid-range pricing ($113)
+Entire home/apt boxplot shows many outliers above $400 — some premium luxury listings exist
+Brickell boxplot is very narrow — pricing is very consistent with little variation

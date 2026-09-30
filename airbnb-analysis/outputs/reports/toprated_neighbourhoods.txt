@@ -1,0 +1,124 @@
+# ============================================
+# SAVE INSIGHTS TO NOTEPAD FILE
+# ============================================
+
+insights = """
+================================================================
+        AIRBNB DATA ANALYSIS - KEY INSIGHTS REPORT
+================================================================
+
+----------------------------------------------------------------
+1. TOP RATED NEIGHBOURHOODS (BY GUEST RATING)
+----------------------------------------------------------------
+Rank  Neighbourhood            Avg Rating
+----  -----------------------  ----------
+1.    New Scotland             4.91
+2.    Melrose                  4.89
+3.    Buckingham Lake          4.86
+4.    Heather Estates          4.85
+5.    Capitol Hill             4.83
+6.    Ten Broeck Triangle      4.83
+7.    Pine Hills               4.83
+8.    Manning Boulevard        4.82
+9.    Delaware Avenue          4.81
+10.   Central Avenue           4.79
+
+----------------------------------------------------------------
+2. TOP NEIGHBOURHOODS BY LOCATION SCORE
+----------------------------------------------------------------
+Rank  Neighbourhood                  Location Score
+----  -----------------------------  --------------
+1.    Melrose                        4.90
+1.    Buckingham Lake                4.90
+3.    New Scotland                   4.87
+4.    Center Square & Hudson/Park    4.81
+5.    Glen Heather Estates           4.78
+6.    Capitol Hill                   4.77
+7.    Pine Hills                     4.74
+8.    Washington Park                4.73
+9.    Ten Broeck Triangle            4.73
+10.   Unknown                        4.73
+
+----------------------------------------------------------------
+3. PRICE RANGES BY ROOM TYPE
+----------------------------------------------------------------
+Room Type            Avg Price
+-------------------  ---------
+Entire home/apt      $128
+Hotel room           $94
+Private room         $68
+
+----------------------------------------------------------------
+4. PRICE RANGES BY NEIGHBOURHOOD (TOP 10)
+----------------------------------------------------------------
+Neighbourhood                  Avg Price
+-----------------------------  ---------
+Melrose                        $170  (Most Expensive)
+Delaware Avenue                $147
+Park South                     $133
+Pastures                       $130
+Mansion Area                   $125
+Washington Park                $117
+Pine Hills                     $113
+Unknown                        $98
+Center Square & Hudson/Park    $94
+Brickell                       $47   (Cheapest)
+
+----------------------------------------------------------------
+5. CORRELATION WITH PRICE (KEY VARIABLES)
+----------------------------------------------------------------
+Variable                Correlation   Impact
+----------------------  -----------   ------------------------
+accommodates            +0.69         Strong Positive
+bedrooms                +0.60         Strong Positive
+beds                    +0.54         Strong Positive
+estimated_revenue       +0.32         Moderate Positive
+bathrooms               +0.24         Moderate Positive
+number_of_reviews       +0.15         Very Weak Positive
+availability_365        -0.08         Almost No Impact
+review_scores_rating    +0.03         No Impact
+reviews_per_month       +0.04         No Impact
+minimum_nights          -0.08         No Impact
+
+----------------------------------------------------------------
+6. IMPACT OF NUMBER OF REVIEWS ON PRICE
+----------------------------------------------------------------
+- Correlation value : +0.15 (Very weak positive)
+- Conclusion        : Number of reviews has almost ZERO
+                      impact on price
+- Reason            : Cheaper listings get booked more
+                      frequently leading to more reviews
+                      Price is driven by property SIZE
+                      not review count
+
+----------------------------------------------------------------
+7. RATING vs PRICE - KEY INSIGHTS
+----------------------------------------------------------------
+- Best Overall       : New Scotland  (Rating 4.91, Price ~$90)
+- Best Location      : Melrose & Buckingham Lake (Score 4.90)
+- Best Value         : New Scotland  (Top rated + affordable)
+- Premium            : Melrose       (High rated + high price)
+- Worst Value        : Unknown red dot (~$160, Rating ~4.0)
+
+----------------------------------------------------------------
+8. OVERALL CONCLUSIONS
+----------------------------------------------------------------
+* Property SIZE is the biggest driver of price
+  (accommodates > bedrooms > beds > bathrooms)
+
+* Reviews & ratings have negligible impact on price
+
+* New Scotland, Melrose, Buckingham Lake, Capitol Hill
+  and Pine Hills appear in BOTH top rated AND top
+  location score lists - most consistent neighbourhoods
+
+* Entire home/apt costs almost DOUBLE a private room
+
+* Melrose commands highest avg price ($170) despite
+  not having most listings
+
+* Pine Hills has MOST listings but only mid-range
+  pricing ($113)
+
+* Brickell is cheapest at $47 - nearly 4x cheaper
+  than Melrose
